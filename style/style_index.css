@@ -1,0 +1,189 @@
+
+#titulo {
+  color: white;
+  padding: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 21%, rgba(0, 212, 255, 1) 100%);
+  border-radius: 10px;
+}
+
+.slide-top {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+#rodape {
+  text-align: center;
+  margin: 10rem;
+}
+@keyframes slide-top {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+body {
+
+  text-align: center;
+}
+
+.wrap {
+  display: inline-block;
+  -webkit-box-shadow: 0 0 100px  rgb(255, 255, 255);
+  -moz-box-shadow: 0 0 100px  rgb(255, 255, 255);
+  box-shadow: 0 0 100px  rgb(255, 255, 255);
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: block;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  text-align: left;
+}
+
+li {
+  float: left;
+}
+
+ul:after {
+  clear: both;
+}
+
+ul:before,
+ul:after {
+  content: " ";
+  display: table;
+}
+
+nav {
+  position: relative;
+  background: #333333;
+  background-image: -webkit-linear-gradient(bottom, #333333 7%, #333333 100%);
+  background-image: -moz-linear-gradient(bottom, 7%, #333333 100%);
+  background-image: -o-linear-gradient(bottom, #333333 7%, #333333 100%);
+  background-image: linear-gradient(bottom, 7%,#333333 100%);
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px #333333;
+  -webkit-box-shadow: 2px 2px 3px  #333333;
+  -moz-box-shadow: 2px 2px 3px #333333;
+  box-shadow: 2px 2px 3px #333333;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+ul.primary li a {
+  display: block;
+  padding: 20px 50px;
+  border-right: 1px solid #000000;
+}
+
+ul.primary li:last-child a {
+  border-right: none;
+}
+
+ul.primary li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+ul.sub {
+  position: absolute;
+  z-index: 200;
+  box-shadow: 2px 2px 0 rgb(0, 0, 0);
+  width: 35%;
+  display: none;
+}
+
+ul.sub li {
+  float: none;
+  margin: 0;
+}
+
+ul.sub li a {
+  border-bottom: 1px dotted rgb(255, 255, 255);
+  border-right: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+}
+
+ul.sub li:last-child a {
+  border-bottom: none;
+}
+
+ul.sub li a:hover {
+  color: rgb(255, 255, 255);
+  background: #ffffff;
+}
+
+ul.primary li:hover ul {
+  display: block;
+  background:rgb(88, 87, 87);
+}
+
+ul.primary li:hover a {
+  background: rgb(88, 87, 87);
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+}
+
+ul.primary li:hover > a {
+  color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 700px) {
+  .decor {
+    padding: 3px;
+  }
+
+  .wrap {
+    width: 70%;
+    margin-top: 0px;
+  }
+
+  li {
+    float: none;
+  }
+
+  ul.primary li:hover a {
+    background: none;
+    color: #ffffff;
+    text-shadow: 1px 0px #ffffff;
+  }
+
+  ul.primary li:hover ul {
+    display: block;
+    background:  #535151;
+    color:#ffffff;
+  }
+
+  ul.sub {
+    display: block;
+    position: static;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  ul.sub li a {
+    background:  #535151;
+    border: none;
+    color: #ffffff;
+  }
+
+  ul.sub li a:hover {
+    color:  #ffffff;
+    background: none;
+  }
+}
+
+
+
+
