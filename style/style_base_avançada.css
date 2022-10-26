@@ -148,37 +148,7 @@ body {
   h3,h6,h4 {
     color: rgba(9,9,121,1) ed;
   }
-
-body {
-    background-color: rgb(240, 239, 239);
-}
-
-.container {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.borda {
-    border: 2px solid;
-}
-.all-browsers {
-    margin: 0;
-    padding: 5px;
-    background-color: #111010;
-  }
   
-  .all-browsers > h1, .browser {
-    margin: 5px;
-    padding: 5px;
-  }
-  
-  .browser {
-    background: white;
-  }
-  
-  .browser > h2, p {
-    margin: 2px;
-    font-size: 90%;
-  }
+
+
   
